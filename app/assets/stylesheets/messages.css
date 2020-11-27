@@ -1,6 +1,5 @@
 .wrapper{
   display: flex;
-  overflow-wrap: break-word;
 }
 
 /* ********** side ********** */
@@ -13,7 +12,30 @@
 .side_top{
   height: 100px;
   padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.user_name a{
+  font-size: 16px;
+  color: #FAFAFA;
+  text-decoration: none;
+}
+
+.room_create_button{
+  font-size: 10px;
+}
+
+.room_create_button a{
+  /* font-size: 10px; */
+  color: deepskyblue;
+  padding: 14px;
+  border: 1px solid lightblue;
+  text-decoration: none;
+}
+
+
 
 .side_room{
   height: calc( 100% - 100px);
@@ -21,6 +43,14 @@
   padding: 0 20px;
 }
 
+.room_list li{
+  padding: 20px 0 40px;
+}
+
+.room_list li a{
+  color: white;
+  text-decoration: none;
+}
 
 /* ********** main ********** */
 .main_chat{
