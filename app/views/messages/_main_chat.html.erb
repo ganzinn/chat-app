@@ -4,22 +4,8 @@
 </div>
 <div class="chat_main">
   <ul>
-    <li>
-      <div class="name_date_wrapper">
-        <span class="chat_name" >Tom</span>
-        <span class="chat_date">2020/3/31(Wed) 12:43:30</span>
-      </div>
-      <div class="message">おはよう</div>
-    </li>
-    <li>
-      <div class="name_date_wrapper">
-        <span class="chat_name" >Sim</span>
-        <span class="chat_date">2020/3/31(Wed) 12:43:30</span>
-      </div>
-      <div class="message">こんにちわ</div>
-    </li>
+    <%= render partial: "message", collection: @messages %>
   </ul>
-  <div class="user_name_on_chat"></div>
 </div>
 <div class="chat_form">
   <%= form_with model: [@room, @message], class: 'form', local: true do |f|  %>
